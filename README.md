@@ -101,9 +101,9 @@ This is the implement of course named "Computer System Skills Training" of WHUT.
 
 Part1: 注册、登录
 
-​	打开软件 → 输入软件注册码(MAC or Disk SN) → 验证注册码 → 验证登录密码 → 登录成功！
+1. 打开软件 → 输入软件注册码(MAC or Disk SN) → 验证注册码 → 验证登录密码 → 登录成功！
 
-​	流程图如下：
+​	程序流程如下:
 
 ​	![enter](https://github.com/RaySunWHUT/MD5-Encryption/blob/master/assets/enter.png)
 
@@ -111,8 +111,11 @@ Part1: 注册、登录
 
 Part2: 加密、解密测试
 
-	1. 登录成功 → 加密 → 手动输入/上传  → 显示加密前、加密后的文本； 
- 	2. 登录成功 → 解密 → 选择文本 → 解密测试系统正确性。
+ 1. 登录成功 → 加密 → 手动输入/上传  → 显示加密前、加密后的文本； 
+
+ 2. 登录成功 → 解密 → 选择文本 → 解密测试系统正确性。
+
+    程序流程如下:
 
 ​	![function](https://github.com/RaySunWHUT/MD5-Encryption/blob/master/assets/function.png)
 # References:
