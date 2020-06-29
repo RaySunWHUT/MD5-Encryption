@@ -105,13 +105,15 @@ Part1: 注册、登录
 
 ​	流程图如下：
 
-​	![enter](G:\GithubDesktop\MD5-Encryption\assets\enter.png)
+​	![enter](https://github.com/RaySunWHUT/MD5-Encryption/blob/master/assets/enter.png)
 
 
 
 Part2: 加密、解密测试
 
-​	登录成功 → 加密文本 → 手动输入/上传 
+​	登录成功 → 加密文本 → 手动输入/上传 → 
+
+​	![enter](https://github.com/RaySunWHUT/MD5-Encryption/blob/master/assets/function.png)
 
 # References:
 1. https://www.cnblogs.com/anywell/p/10242635.html
