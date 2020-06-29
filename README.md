@@ -98,18 +98,15 @@ This is the implement of course named "Computer System Skills Training" of WHUT.
           	3. 实现跨平台桌面程序。
 
 # References:
+1. https://www.cnblogs.com/anywell/p/10242635.html
 
-1. https://github.com/RaySunWHUT/MD5-Encryption/blob/master/assets/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E8%83%BD%E5%8A%9B%E5%AE%9E%E8%AE%AD%E4%BB%BB%E5%8A%A1%E4%B9%A6-%E5%9F%BA%E4%BA%8EAES%E5%8A%A0%E5%AF%86%E7%9A%84%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BA%94%E7%94%A8.doc](https://github.com/RaySunWHUT/MD5-Encryption/blob/master/assets/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E8%83%BD%E5%8A%9B%E5%AE%9E%E8%AE%AD%E4%BB%BB%E5%8A%A1%E4%B9%A6-%E5%9F%BA%E4%BA%8EAES%E5%8A%A0%E5%AF%86%E7%9A%84%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BA%94%E7%94%A8.doc)
+2. https://blog.csdn.net/qq_33113661/article/details/88991909
 
-2. https://www.cnblogs.com/anywell/p/10242635.html
+3. https://www.cnblogs.com/anywell/p/10242635.html
 
-3. https://blog.csdn.net/qq_33113661/article/details/88991909
+4. https://yq.aliyun.com/articles/586741?utm_content=m_1000012592
 
-4. https://www.cnblogs.com/anywell/p/10242635.html
-
-5. https://yq.aliyun.com/articles/586741?utm_content=m_1000012592
-
-6. https://segmentfault.com/a/1190000019402908?utm_source=tag-newest
+5. https://segmentfault.com/a/1190000019402908?utm_source=tag-newest
 
 
 
