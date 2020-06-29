@@ -36,7 +36,7 @@ This is the implement of course named "Computer System Skills Training" of WHUT.
 
 1. **实现方式**: 
 
-   ​    JavaScript 调用 Java DDL.
+   ​    Java 调用 C DDL.
 
 2. **算法**: 
 
@@ -99,7 +99,7 @@ This is the implement of course named "Computer System Skills Training" of WHUT.
 
 # References:
 
-1. [G:\packages\Courseware\计算机系统软件实训\计算机系统能力实训任务书-基于MD5加密的动态链接库设计与应用.doc](G:\packages\Courseware\计算机系统软件实训\计算机系统能力实训任务书-基于MD5加密的动态链接库设计与应用.doc)
+1. https://github.com/RaySunWHUT/MD5-Encryption/blob/master/assets/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E8%83%BD%E5%8A%9B%E5%AE%9E%E8%AE%AD%E4%BB%BB%E5%8A%A1%E4%B9%A6-%E5%9F%BA%E4%BA%8EAES%E5%8A%A0%E5%AF%86%E7%9A%84%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BA%94%E7%94%A8.doc](https://github.com/RaySunWHUT/MD5-Encryption/blob/master/assets/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E8%83%BD%E5%8A%9B%E5%AE%9E%E8%AE%AD%E4%BB%BB%E5%8A%A1%E4%B9%A6-%E5%9F%BA%E4%BA%8EAES%E5%8A%A0%E5%AF%86%E7%9A%84%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BA%94%E7%94%A8.doc)
 
 2. https://www.cnblogs.com/anywell/p/10242635.html
 
