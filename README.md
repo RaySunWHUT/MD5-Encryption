@@ -71,7 +71,7 @@ This is the implement of course named "Computer System Skills Training" of WHUT.
                    	2. 上传按钮：选择.txt / .doc / .docx文件。
                       	2. 显示：
                            	1. 显示加密前后文本内容。
-          	2. 解密(decrypt):
+                  	2. 解密(decrypt):
                   	1. 对文本进行解密:
                        	1. 文本列表。
                            	2. 选择是否解密。
@@ -111,16 +111,12 @@ Part1: 注册、登录
 
 Part2: 加密、解密测试
 
-<<<<<<< HEAD
+
 ​	1. 登录成功 → 加密 → 手动输入/上传  → 显示加密前、加密后的文本； 
 
-​	2. 登录成功 → 解密 → 选择文本 → 解密测试系统正确性。
-=======
-​	登录成功 → 加密文本 → 手动输入/上传 → 
+2. 登录成功 → 解密 → 选择文本 → 解密测试系统正确性。
 
-​	![enter](https://github.com/RaySunWHUT/MD5-Encryption/blob/master/assets/function.png)
->>>>>>> ed4e7f47eca6b3c54ba2afb0a3a765f9cf6998a6
-
+​	![function](https://github.com/RaySunWHUT/MD5-Encryption/blob/master/assets/function.png)
 # References:
 1. https://www.cnblogs.com/anywell/p/10242635.html
 
