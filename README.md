@@ -68,14 +68,14 @@ This is the implement of course named "Computer System Skills Training" of WHUT.
      	1. 加密(encrypt):
           	1. 输入文本:
                	1. 文本框：手动输入。
-               	2. 上传按钮：选择.txt / .doc / .docx文件。
-          	2. 显示：
-               	1. 显示加密前后文本内容。
-     	2. 解密(decrypt):
-          	1. 对文本进行解密:
-               	1. 文本列表。
-               	2. 选择是否解密。
-               	3. 解密结果显示。
+                   	2. 上传按钮：选择.txt / .doc / .docx文件。
+                      	2. 显示：
+                           	1. 显示加密前后文本内容。
+          	2. 解密(decrypt):
+                  	1. 对文本进行解密:
+                       	1. 文本列表。
+                           	2. 选择是否解密。
+                               	3. 解密结果显示。
 
 
 
@@ -93,9 +93,17 @@ This is the implement of course named "Computer System Skills Training" of WHUT.
           	3. 连接dll接口。
           	4. 编写project back end。
      	3. Electron框架实现GUI。
-          	1. 整合HTML、css、JavScript。
+           	1. 整合HTML、css、JavScript。
           	2. 编写project front end。
           	3. 实现跨平台桌面程序。
+
+# Workflow:
+
+
+
+打开软件  $\longrightarrow$ 输入软件注册码(MAC or Disk SN)   $\longrightarrow$ 
+
+
 
 # References:
 1. https://www.cnblogs.com/anywell/p/10242635.html
