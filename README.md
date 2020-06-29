@@ -103,7 +103,7 @@ Part1: 注册、登录
 
 1. 打开软件 → 输入软件注册码(MAC or Disk SN) → 验证注册码 → 验证登录密码 → 登录成功！
 
-​	程序流程如下:
+   程序流程如下:
 
 ​	![enter](https://github.com/RaySunWHUT/MD5-Encryption/blob/master/assets/enter.png)
 
