@@ -99,11 +99,19 @@ This is the implement of course named "Computer System Skills Training" of WHUT.
 
 # Workflow:
 
+Part1: 注册、登录
+
+​	打开软件 → 输入软件注册码(MAC or Disk SN) → 验证注册码 → 验证登录密码 → 登录成功！
+
+​	流程图如下：
+
+​	![enter](G:\GithubDesktop\MD5-Encryption\assets\enter.png)
 
 
-打开软件  $\longrightarrow$ 输入软件注册码(MAC or Disk SN)   $\longrightarrow$ 
 
+Part2: 加密、解密测试
 
+​	登录成功 → 加密文本 → 手动输入/上传 
 
 # References:
 1. https://www.cnblogs.com/anywell/p/10242635.html
