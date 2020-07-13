@@ -1,5 +1,6 @@
 # MD5-Encryption
 This is the implement of course named "Computer System Skills Training" of WHUT.
+武汉理工大学(WHUT), 2020《计算机系统能力实训课程设计》 ———— "基于MD5加密的动态链接库设计与应用" 设计 + 源码.
 
 # Demand:
 
