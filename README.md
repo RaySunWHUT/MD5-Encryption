@@ -130,7 +130,7 @@ Part2: 加密、解密测试
    ![login](https://github.com/RaySunWHUT/MD5-Encryption/blob/master/assets/login.png)
 
 3. 加密界面:
-   ![encrypt](https://github.com/RaySunWHUT/MD5-Encryption/blob/master/assets/encrypt.png)
+   ![encrypt](https://github.com/RaySunWHUT/MD5-Encryption/blob/master/assets/home.png)
 
 # References:
 1. https://www.cnblogs.com/anywell/p/10242635.html
