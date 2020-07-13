@@ -118,6 +118,13 @@ Part2: 加密、解密测试
     程序流程如下:
 
 ​	![function](https://github.com/RaySunWHUT/MD5-Encryption/blob/master/assets/function.png)
+
+
+
+# UI show:
+
+
+
 # References:
 1. https://www.cnblogs.com/anywell/p/10242635.html
 
