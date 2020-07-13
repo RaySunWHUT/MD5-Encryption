@@ -1,20 +1,45 @@
+// md5.cpp : Defines the exported functions for the DLL.
+//
 
-#include "encryptdll.h"
+//#include "pch.h"
+//#include "framework.h"
+//#include "md5.h"
+//
+//
+//// This is an example of an exported variable
+//MD5_API int nmd5=0;
+//
+//// This is an example of an exported function.
+//MD5_API int fnmd5(void)
+//{
+//    return 0;
+//}
+//
+//// This is the constructor of a class that has been exported.
+//Cmd5::Cmd5()
+//{
+//    return;
+//}
 
+
+#include "pch.h"
 #include<stdio.h>
 #include<stdlib.h> 
 #include<time.h>  
 #include<string.h>
+#include "md5.h"
 
 #pragma warning(disable:4996)
 
-// å°è£…MD5ç®—æ³•
-// éœ€è¦æ³¨æ„æœ‰ç¬¦å·æ•°è½¬å˜ä¸ºæ— ç¬¦å·æ•°
+// ·â×°MD5Ëã·¨
+// ĞèÒª×¢ÒâÓĞ·ûºÅÊı×ª±äÎªÎŞ·ûºÅÊı
 char* MD5Encrypt(char* text) {
 
     char szDigest[16];
 
     static char store[200] = { "" };
+
+    memset(store, 0, sizeof(store));
 
     char temp[10] = { "" };
 
@@ -22,18 +47,18 @@ char* MD5Encrypt(char* text) {
 
     for (int i = 0; i < 16; i++) {
 
-        // å°†æœ‰ç¬¦å·æ•° ---> æ— ç¬¦å·æ•°; å°†æ— ç¬¦å·å­—ç¬¦å¯¹åº”çš„ASCIIå€¼å…·è±¡åŒ–
-        int digit = (unsigned char) szDigest[i];
+        // ½«ÓĞ·ûºÅÊı ---> ÎŞ·ûºÅÊı; ½«ÎŞ·ûºÅ×Ö·û¶ÔÓ¦µÄASCIIÖµ¾ßÏó»¯
+        int digit = (unsigned char)szDigest[i];
 
-        // å…ˆå°†10è¿›åˆ¶è½¬å˜ä¸º16è¿›åˆ¶, ç„¶åå°†16è¿›åˆ¶è¡¨ç¤ºçš„å­—ç¬¦è½¬å˜ä¸ºå­—ç¬¦ä¸²
+        // ÏÈ½«10½øÖÆ×ª±äÎª16½øÖÆ, È»ºó½«16½øÖÆ±íÊ¾µÄ×Ö·û×ª±äÎª×Ö·û´®
         itoa(digit, temp, 16);
 
         temp[strlen(temp)] = ' ';
 
-        // è¿½åŠ å­—ç¬¦ä¸²
+        // ×·¼Ó×Ö·û´®
         append(temp, store, strlen(temp), strlen(store));
 
-        // æ¸…ç©ºtemp
+        // Çå¿Õtemp
         memset(temp, 0, sizeof(temp));
 
     }
@@ -237,7 +262,7 @@ void MD5Digest(char* pszInput, unsigned long nInputSize, char* pszOutPut) {
 }
 
 
-// è¿½åŠ å­—ç¬¦ä¸², ä½†åœ¨ä½¿ç”¨æ—¶è¦æ³¨æ„srcä¸desçš„å…³ç³»
+// ×·¼Ó×Ö·û´®, µ«ÔÚÊ¹ÓÃÊ±Òª×¢ÒâsrcÓëdesµÄ¹ØÏµ
 void append(char* src, char* des, int src_len, int des_len) {
 
     char* ps = src;

@@ -1,6 +1,6 @@
 front end: 
 
-​	包含由Electron实现GUI程序代码。
+​	包含由Electron实现的前端 GUI 程序代码。
 
 back end:
 

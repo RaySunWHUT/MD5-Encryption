@@ -1,3 +1,28 @@
+//// The following ifdef block is the standard way of creating macros which make exporting
+//// from a DLL simpler. All files within this DLL are compiled with the MD5_EXPORTS
+//// symbol defined on the command line. This symbol should not be defined on any project
+//// that uses this DLL. This way any other project whose source files include this file see
+//// MD5_API functions as being imported from a DLL, whereas this DLL sees symbols
+//// defined with this macro as being exported.
+//#ifdef MD5_EXPORTS
+//#define MD5_API __declspec(dllexport)
+//#else
+//#define MD5_API __declspec(dllimport)
+//#endif
+//
+//// This class is exported from the dll
+//class MD5_API Cmd5 {
+//public:
+//	Cmd5(void);
+//	// TODO: add your methods here.
+//};
+//
+//extern MD5_API int nmd5;
+//
+//MD5_API int fnmd5(void);
+
+#pragma once
+#include <iostream>
 
 #define S11 7  
 #define S12 12  
@@ -61,8 +86,4 @@ void MD5Digest(char* pszInput, unsigned long nInputSize, char* pszOutPut);
 void append(char* src, char* des, int src_len, int des_len);
 
 
-// 封装MD5算法
-// extern "C"
-__declspec(dllexport) char* MD5Encrypt(char* encrypt);
-
-
+extern "C" __declspec(dllexport) char* MD5Encrypt(char* encrypt);
