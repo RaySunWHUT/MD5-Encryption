@@ -13,7 +13,7 @@
       </div>
 
       <el-input class = "area" type="textarea" rows="1" placeholder="encryption shows here..." 
-                v-model="text_output" resize="none" autofocus spellcheck="false"></el-input>
+                v-model="text_output" resize="none" autofocus spellcheck="false" maxlength="35" show-word-limit></el-input>
 
       <el-input class = "area_input" type="textarea" rows="7" placeholder="input something here..." 
                 v-model="text_input" resize="none" maxlength="255" show-word-limit autofocus spellcheck="false"></el-input>

@@ -145,6 +145,9 @@ export default {
           console.log(err);
           
           this.$message.error("global error!");
+
+          // 取消加载中覆盖
+          _this.loading = false;
 				
 				});
 
