@@ -65,7 +65,7 @@ public class DLLUtil {
 
     public static void main(String[] args) {
 
-        String cc = textEncryption("60-F6-77-B4-FF-C3");
+        String cc = textEncryption("Hello everyone!");
 
         System.out.println(cc);
 
