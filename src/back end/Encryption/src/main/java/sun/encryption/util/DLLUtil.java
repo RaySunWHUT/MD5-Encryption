@@ -23,7 +23,26 @@ public class DLLUtil {
         // 返回的加密后text, 是以空格为分隔符的小写的加密序列
         String md5Text = CLibrary.INSTANCE.MD5Encrypt(text);
 
-        return md5Text.replace(" ", "").toUpperCase();
+        String[] result = md5Text.split(" ");
+
+        StringBuilder finish = new StringBuilder();
+
+        for (String e: result) {
+
+            // 若不足以为, 填零补充
+            if (e.length() == 1) {
+
+                finish.append("0").append(e.toUpperCase());
+
+            } else {
+
+                finish.append(e.toUpperCase());
+
+            }
+
+        }
+
+        return finish.toString();
 
     }
 
@@ -46,7 +65,7 @@ public class DLLUtil {
 
     public static void main(String[] args) {
 
-        String cc = textEncryption("Hello everyone!");
+        String cc = textEncryption("60-F6-77-B4-FF-C3");
 
         System.out.println(cc);
 
