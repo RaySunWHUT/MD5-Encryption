@@ -79,7 +79,7 @@ export default {
 
           this.$message.warning("register code can't be empty!");
 
-        } else if (this.registerCode.length > 30)  {
+        } else if (this.registerCode.length > 50)  {
           
           this.$message.warning("register code is too long!");
 
