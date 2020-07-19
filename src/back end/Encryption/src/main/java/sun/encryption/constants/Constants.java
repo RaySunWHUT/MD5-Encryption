@@ -8,9 +8,6 @@ public class Constants {
     // 创建目录
     public static final String KEY_PATH = "SOFTWARE\\EncryptionSun";
 
-    public static final String USERNAME = "sun";
-    public static final String PASSWORD = "275518";
-
     public static final Integer SUCCESS_CODE = 200;
 
     public static final Integer FAILED_CODE = 500;
@@ -21,19 +18,13 @@ public class Constants {
 
     public static final String QUERY_SUCCESS = "query successful";
 
-    public static final String INSERT_SUCCESS = "insert successful";
-
-    public static final String DELETE_SUCCESS = "delete successful";
-
-    public static final String UPDATE_SUCCESS = "update successful";
-
     public static final String QUERY_FAILED = "query failed";
-
-//    public static final String REGISTER_CODE = "registerCode";
 
     public static final String GLOBAL_EXCEPTION = "global exception";
 
     public static final String GLOBAL_ERROR = "global error";
+
+    public static final String KEY_SECRET = "sun";
 
     // 上传文件目录, 可自行修改
     public static final String DESTINATION = "F:\\Sun\\";

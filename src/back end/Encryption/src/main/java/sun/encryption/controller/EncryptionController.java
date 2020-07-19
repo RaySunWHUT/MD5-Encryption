@@ -96,4 +96,13 @@ public class EncryptionController {
 
     }
 
+
+    @RequestMapping(value = {"/userRegister"}, method = RequestMethod.POST)
+    @ResponseBody
+    public JSONObject userRegister(@RequestBody JSONObject jsonObject) {
+
+        return encryptionService.userRegister(jsonObject);
+
+    }
+
 }

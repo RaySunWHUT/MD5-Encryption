@@ -1,19 +1,14 @@
 package sun.encryption.serviceImpl;
 
-import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.multipart.MultipartFile;
 import sun.encryption.constants.Constants;
 import sun.encryption.service.EncryptionService;
 
 import sun.encryption.util.*;
 
-import java.io.File;
-import java.io.IOException;
 
 @Service("encryptionService")
 @Transactional
@@ -24,13 +19,15 @@ public class EncryptionServiceImpl implements EncryptionService {
     @Override
     public JSONObject register(JSONObject jsonObject)  {
 
+        String registerCode = jsonObject.getString("registerCode");
+
         try {
 
             String macAddress = NetworkUtil.getWirelessMacAddress();
 
-            String encryptMacAddress = DLLUtil.textEncryption(macAddress);
+            String encryptMacAddress = DLLUtil.textEncryption(macAddress + Constants.KEY_SECRET);
 
-            if (jsonObject.getString("registerCode").equals(encryptMacAddress)) {
+            if (registerCode.equals(encryptMacAddress)) {
 
                 return JSONUtil.successJSON("register successful!");
 
@@ -61,14 +58,51 @@ public class EncryptionServiceImpl implements EncryptionService {
         String password = jsonObject.getString("password");
 
         // 是否存在对应键值
-        String isKeyExist = RegistryUtil.readKeyFromRegistry(Constants.USERNAME);
+        // 返回的是对应主键的值
+        boolean isKeyExist = RegistryUtil.isKeyExists(userName);
+
+        // 若用户不存在
+        if (!isKeyExist) {
+
+            return JSONUtil.errorJSON("username don't exist!");
+
+        } else {    // 若用户存在
+
+            String md5Password = DLLUtil.textEncryption(password);
+
+            String blackPassword = RegistryUtil.readKeyFromRegistry(userName);
+
+            if (md5Password.equals(blackPassword)) {    // 若密码正确
+
+                return JSONUtil.successJSON();
+
+            } else {
+
+                return JSONUtil.errorJSON("username or password error!");
+
+            }
+
+        }
+
+    }
+
+
+    @Override
+    public JSONObject userRegister(JSONObject jsonObject) {
+
+        String userName = jsonObject.getString("username");
+
+        String password = jsonObject.getString("password");
+
+        // 是否存在对应键值
+        boolean isKeyExists = RegistryUtil.isKeyExists(userName);
 
         // 若不存在, 写入键值
-        if (isKeyExist == null) {
+        if (!isKeyExists) {
 
-            String md5Pwd = DLLUtil.textEncryption(Constants.PASSWORD);
+            String md5Pwd = DLLUtil.textEncryption(password);
 
-            boolean isOk = RegistryUtil.writeToRegistry(Constants.USERNAME, md5Pwd);
+            boolean isOk = RegistryUtil.writeToRegistry(userName, md5Pwd);
 
             if (!isOk) {    // 若写入失败
 
@@ -76,37 +110,13 @@ public class EncryptionServiceImpl implements EncryptionService {
 
             }
 
-        }
+        } else {    // 用户名已存在
 
-
-        if (userName.equals(Constants.USERNAME)) {
-
-            logger.info(password);
-
-            String md5Password = RegistryUtil.readKeyFromRegistry(userName);
-
-            String blackPassword = DLLUtil.textEncryption(password);
-
-            logger.info(md5Password);
-
-            logger.info(blackPassword);
-
-            // 若加密后的密码与注册表中使用md5加密的密码相同, 则返回成功
-            if (blackPassword.equals(md5Password)) {
-
-                return JSONUtil.successJSON("login successful");
-
-            } else {
-
-                return JSONUtil.errorJSON("password error");
-
-            }
-
-        } else {
-
-            return JSONUtil.errorJSON("username error");
+            return JSONUtil.errorJSON("username exists!");
 
         }
+
+        return JSONUtil.successJSON("register successful!");
 
     }
 

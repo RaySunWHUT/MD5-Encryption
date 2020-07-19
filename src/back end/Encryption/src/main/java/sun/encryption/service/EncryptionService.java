@@ -13,4 +13,7 @@ public interface EncryptionService {
 
     JSONObject encrypt(JSONObject jsonObject);  // 加密文本
 
+
+    JSONObject userRegister(JSONObject jsonObject); // 注册
+
 }

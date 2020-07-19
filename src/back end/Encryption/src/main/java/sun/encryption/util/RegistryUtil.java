@@ -91,22 +91,31 @@ public class RegistryUtil {
 
     }
 
+    public static boolean isKeyExists(String key) {
 
-    public static void main(String[] args) {
+        String value;
 
-//        boolean isOk;
-//
-//        isOk = writeToRegistry("sun", "275518");
-//
-//        System.out.println("写入" + isOk);
-//
-//        String value = readKeyFromRegistry("sun");
-//
-//        System.out.println(value);
-//
-//        isOk = deleteRegistryKey(Constants.KEY_PATH);
-//
-//        System.out.println("删除" + isOk);
+        try {
+
+            // 根据 key(value所在目录) 返回注册表中类型为 REG_SZ 的 value 对应的值
+            value = Advapi32Util.registryGetStringValue(
+                    WinReg.HKEY_LOCAL_MACHINE, Constants.KEY_PATH, key);
+
+        } catch (Exception e) { // 对应key不存在
+
+            value = null;
+
+        }
+
+        if (value == null) {
+
+            return false;
+
+        } else {
+
+            return true;
+
+        }
 
     }
 

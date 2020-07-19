@@ -2,6 +2,7 @@ package sun.encryption.util;
 
 import com.sun.jna.Library;
 import com.sun.jna.Native;
+import sun.encryption.constants.Constants;
 
 public class DLLUtil {
 
@@ -65,9 +66,9 @@ public class DLLUtil {
 
     public static void main(String[] args) {
 
-        String cc = textEncryption("Hello everyone!");
+        String mac = textEncryption("60-F6-77-B4-FF-C3" + Constants.KEY_SECRET);
 
-        System.out.println(cc);
+        System.out.println(mac);
 
     }
 
