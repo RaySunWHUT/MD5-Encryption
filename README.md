@@ -183,19 +183,20 @@ yarn install
 yarn run serve
 ```
 
-### 项目运行成功后，可执行以下命令，利用electron-builder打包项目(读者可自行查询electron的其他命令[其他命令](https://nklayman.github.io/vue-cli-plugin-electron-builder/guide/#to-start-a-development-server))
+### 项目运行成功后，可执行以下命令，利用electron-builder打包项目(读者可自行查询electron的[其他命令](https://nklayman.github.io/vue-cli-plugin-electron-builder/guide/#to-start-a-development-server))
 
 ```bash
 yarn run electron:build 
 ```
 
-### 打包成功后，在dist_electorn目录下，即可找到 .exe文件，点击.exe，即可安装electron打包后的软件。
+### 打包成功后，在dist_electorn目录下，即可找到 .exe文件
+![tree_list](https://github.com/RaySunWHUT/MD5-Encryption/blob/master/assets/tree_list.png)
 
+### 点击.exe，即可安装electron打包后的软件
+![install](https://github.com/RaySunWHUT/MD5-Encryption/blob/master/assets/install_md5.png)
 
-
-
-
-
+### 点击桌面生成的快捷方式，即可运行软件
+![icon](https://github.com/RaySunWHUT/MD5-Encryption/blob/master/assets/icon.png)
 
 # References:
 1. https://www.cnblogs.com/anywell/p/10242635.html
