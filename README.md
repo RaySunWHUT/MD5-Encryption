@@ -7,7 +7,7 @@ This is the implement of course named "Computer System Skills Training" of WHUT.
 
 1. **GUI 界面**
 
-2. 实现 软件注册(**license**) 功能:
+2. 实现 软件注册 (**register**) 功能:
 
    1. 输入 **注册码** 进行注册（注册码：由DDL根据 硬盘硬件**序列号** 或 网卡 **MAC** 地址 加密生成）。
       1. 注册码错误不能注册。
@@ -15,16 +15,16 @@ This is the implement of course named "Computer System Skills Training" of WHUT.
 
    **idea**: electron 实现跨平台应用；验证： **MAC地址** 不同，即使注册码相同，依然无法注册。
 
-3. 用户注册: 
+3. 用户注册 (**user Register**) 功能: 
 
    ​	实现用户注册功能，要求对应 **用户名** 以及加密后的 **密码** 写入到注册表，以供登录时读取验证。
 
-4. 登录: 
+4. 登录 (**login**) 功能: 
 
    1. 可以根据 **用户名(userName)**、**密码(password)** 登录.
    2. 调用 DLL 对 **密码(password)** 进行加密，并将 用户名(userName) 和 加密后密码(encrypted password) 写入 **系统注册表**(HKEY_LOCAL_MACHINE).
 
-5. 加密(encrypt):
+5. 加密 (**encrypt**) 功能:
 
    1. 调用 DLL 对文本内容(text)进行加密。
    2. 实现方式: 
@@ -32,7 +32,7 @@ This is the implement of course named "Computer System Skills Training" of WHUT.
       2. 打开txt、word获取相应文本内容(text)。
    3. 可以显示加密前、加密后文本内容(text)。
 
-6. **解密测试(Decrypt Test)**: 
+6. **解密测试 (Decrypt Test)**: 
 
    1. 利用在线加解密系统 **测试** DLL 加密结果的**正确性**。
 
@@ -71,15 +71,17 @@ This is the implement of course named "Computer System Skills Training" of WHUT.
  2. 用户注册：userRegister.
  3. 登录: login.
  4. 首页: home.
- 
+
  主要 **功能模块(functional module)**:
       1. 加密(encrypt):
-           1. 输入文本:
-                1. 文本框：手动输入。
-                2. 上传按钮：选择.txt / .doc / .docx文件(目前仅支持.txt，可fork后手动修改)。
-
-           2. 显示：
-                显示加密前后文本内容。
+           
+           输入文本:
+           
+           1. 文本框：手动输入。
+           2. 上传按钮：选择.txt / .doc / .docx文件(目前仅支持.txt，可fork后手动修改)。
+           
+   2. 显示:
+             显示加密前后文本内容。
 
 
 
@@ -95,14 +97,14 @@ This is the implement of course named "Computer System Skills Training" of WHUT.
     
       2. Java访问、读写注册表(registry)；连接动态链接库DLL。
           	1. 获取Mac网卡地址。
-         	2. 获取硬件硬件序列号。
-         	3. 连接dll接口。
-         	4. 编写project back end。
+              	2. 获取硬件硬件序列号。
+                   	3. 连接dll接口。
+                        	4. 编写project back end。
     
       3. Electron框架封装Vue项目，实现跨平台应用。
             	1. 整合HTML、css、JavScript。
-          	2. 编写project front end。
-          	3. 实现跨平台桌面程序。
+                	2. 编写project front end。
+                	3. 实现跨平台桌面程序。
 
 # Workflow:
 
