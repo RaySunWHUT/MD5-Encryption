@@ -15,12 +15,16 @@ This is the implement of course named "Computer System Skills Training" of WHUT.
 
    **idea**: electron 实现跨平台应用；验证： **MAC地址** 不同，即使注册码相同，依然无法注册。
 
-3. 登录: 
+3. 用户注册: 
+
+   ​	实现用户注册功能，要求对应 **用户名** 以及加密后的 **密码** 写入到注册表，以供登录时读取验证。
+
+4. 登录: 
 
    1. 可以根据 **用户名(userName)**、**密码(password)** 登录.
    2. 调用 DLL 对 **密码(password)** 进行加密，并将 用户名(userName) 和 加密后密码(encrypted password) 写入 **系统注册表**(HKEY_LOCAL_MACHINE).
 
-4. 加密(encrypt):
+5. 加密(encrypt):
 
    1. 调用 DLL 对文本内容(text)进行加密。
    2. 实现方式: 
@@ -28,7 +32,7 @@ This is the implement of course named "Computer System Skills Training" of WHUT.
       2. 打开txt、word获取相应文本内容(text)。
    3. 可以显示加密前、加密后文本内容(text)。
 
-5. **解密测试(Decrypt Test)**: 
+6. **解密测试(Decrypt Test)**: 
 
    1. 利用在线加解密系统 **测试** DLL 加密结果的**正确性**。
 
@@ -38,7 +42,7 @@ This is the implement of course named "Computer System Skills Training" of WHUT.
 
 1. **实现方式**: 
 
-   ​    Java 调用 C DDL.
+   ​    Java 调用 C++ DDL.
 
 2. **算法**: 
 
@@ -67,43 +71,43 @@ This is the implement of course named "Computer System Skills Training" of WHUT.
  2. 软件首页: index.
  3. 登录: login.
  4. 主要 **功能模块(functional module)**:
-     	1. 加密(encrypt):
-          	1. 输入文本:
-               	1. 文本框：手动输入。
-                   	2. 上传按钮：选择.txt / .doc / .docx文件。
-                      	2. 显示：
-                           	1. 显示加密前后文本内容。
-                  	2. 解密(decrypt):
-                  	1. 对文本进行解密:
-                       	1. 文本列表。
-                           	2. 选择是否解密。
-                               	3. 解密结果显示。
+      1. 加密(encrypt):
+           1. 输入文本:
+                1. 文本框：手动输入。
+                2. 上传按钮：选择.txt / .doc / .docx文件(目前仅支持.txt，可fork后手动修改)。
+
+              2. 显示：
+
+                显示加密前后文本内容。
 
 
 
 # Thinking:
 
- 1. 总体设计：
+ 1. **总体设计**：
 
     总体设计分为三大部分:
 
-     	1. C语言封装动态链接库 .dll 和 .so。
-          	1. C语言实现MD5加密算法。
-     	2. Java访问、读写注册表(registry)；连接动态链接库DLL。
+      1. C语言封装动态链接库 .dll 和 .so。
+    
+         ​	1. C语言实现MD5加密算法。
+    
+      2. Java访问、读写注册表(registry)；连接动态链接库DLL。
           	1. 获取Mac网卡地址。
-          	2. 获取硬件硬件序列号。
-          	3. 连接dll接口。
-          	4. 编写project back end。
-     	3. Electron框架实现GUI。
-           	1. 整合HTML、css、JavScript。
+         	2. 获取硬件硬件序列号。
+         	3. 连接dll接口。
+         	4. 编写project back end。
+    
+      3. Electron框架封装Vue项目，实现跨平台应用。
+            	1. 整合HTML、css、JavScript。
           	2. 编写project front end。
           	3. 实现跨平台桌面程序。
 
 # Workflow:
 
-Part1: 注册、登录
+Part1: 软件注册、用户注册、登录
 
-1. 打开软件 → 输入软件注册码(MAC or Disk SN) → 验证注册码 → 验证登录密码 → 登录成功！
+1. 打开软件 → 输入软件注册码(MAC or Disk SN) → 验证注册码 → 注册用户账号 → 登录 → 登录成功！
 
    程序流程如下:
 
@@ -115,7 +119,7 @@ Part2: 加密、解密测试
 
  1. 登录成功 → 加密 → 手动输入/上传  → 显示加密前、加密后的文本； 
 
- 2. 登录成功 → 解密 → 选择文本 → 解密测试系统正确性。
+ 2. 打开任意在线加密网站，输入文本，对比加密后的结果。
 
     程序流程如下:
 
@@ -133,7 +137,15 @@ Part2: 加密、解密测试
 
    
 
-2. 登录界面:
+2. 用户注册界面:
+
+   
+
+   ![encrypt](https://github.com/RaySunWHUT/MD5-Encryption/blob/master/assets/user_register.png)
+
+   
+
+3. 登录界面:
 
    
 
@@ -141,7 +153,7 @@ Part2: 加密、解密测试
 
    
 
-3. 加密界面:
+4. 加密界面:
 
    
 
