@@ -7,6 +7,10 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
+/**
+ * 定义全局异常检查
+ * author: Sun Rui
+ */
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 

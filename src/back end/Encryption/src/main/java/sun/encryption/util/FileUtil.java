@@ -5,6 +5,9 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
+/**
+ * author: Sun Rui
+ */
 public class FileUtil {
 
     // 读取文件内容

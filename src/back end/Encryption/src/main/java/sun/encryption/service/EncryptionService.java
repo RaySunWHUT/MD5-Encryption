@@ -1,11 +1,10 @@
 package sun.encryption.service;
 
 import com.alibaba.fastjson.JSONObject;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.multipart.MultipartFile;
 
-import java.io.IOException;
-
+/**
+ * author: Sun Rui
+ */
 public interface EncryptionService {
 
     JSONObject register(JSONObject jsonObject) throws Exception; // 注册

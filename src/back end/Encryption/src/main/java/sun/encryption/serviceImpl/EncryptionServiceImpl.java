@@ -9,7 +9,9 @@ import sun.encryption.service.EncryptionService;
 
 import sun.encryption.util.*;
 
-
+/**
+ * author: Sun Rui
+ */
 @Service("encryptionService")
 @Transactional
 public class EncryptionServiceImpl implements EncryptionService {
@@ -44,9 +46,6 @@ public class EncryptionServiceImpl implements EncryptionService {
             return JSONUtil.errorJSON(Constants.GLOBAL_EXCEPTION);
 
         }
-
-
-
 
     }
 

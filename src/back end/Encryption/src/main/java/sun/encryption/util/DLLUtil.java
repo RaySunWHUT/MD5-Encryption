@@ -2,8 +2,10 @@ package sun.encryption.util;
 
 import com.sun.jna.Library;
 import com.sun.jna.Native;
-import sun.encryption.constants.Constants;
 
+/**
+ * author: Sun Rui
+ */
 public class DLLUtil {
 
     public interface CLibrary extends Library {

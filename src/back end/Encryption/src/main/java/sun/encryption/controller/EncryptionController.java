@@ -12,7 +12,9 @@ import sun.encryption.util.FileUtil;
 import sun.encryption.util.JSONUtil;
 import java.io.*;
 
-
+/**
+ * author: Sun Rui
+ */
 @CrossOrigin
 @RestController
 @RequestMapping(value = {"/encryption"}, method = RequestMethod.POST)

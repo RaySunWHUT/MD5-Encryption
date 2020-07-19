@@ -1,5 +1,9 @@
 package sun.encryption.constants;
 
+/**
+ * Constants: 定义部分系统用常量
+ * author: Sun Rui
+ */
 public class Constants {
 
     // 无线关键字

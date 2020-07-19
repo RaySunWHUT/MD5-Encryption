@@ -11,6 +11,10 @@ import java.util.List;
 
 import java.util.Enumeration;
 
+/**
+ * 返回MAC地址
+ * author: Sun Rui
+ */
 public class NetworkUtil {
 
     /**

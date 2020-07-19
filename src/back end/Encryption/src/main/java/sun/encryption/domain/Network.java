@@ -1,5 +1,9 @@
 package sun.encryption.domain;
 
+/**
+ * Network: 实体domain类
+ * author: Sun Rui
+ */
 public class Network {
 
     // 实际名称

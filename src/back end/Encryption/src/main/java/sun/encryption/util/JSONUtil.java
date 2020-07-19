@@ -3,6 +3,10 @@ package sun.encryption.util;
 import com.alibaba.fastjson.JSONObject;
 import sun.encryption.constants.Constants;
 
+/**
+ * 封装 HTTP 请求
+ * author: Sun Rui
+ */
 public class JSONUtil {
 
     public static JSONObject successJSON() {

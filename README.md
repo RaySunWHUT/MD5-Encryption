@@ -108,8 +108,8 @@ This is the implement of course named "Computer System Skills Training" of WHUT.
     
       3. Electron框架封装Vue项目，实现跨平台应用。
               	1. 整合HTML、css、JavScript。
-                  	2. 编写project front end。
-                  	3. 实现跨平台桌面程序。
+                       	2. 编写project front end。
+                       	3. 实现跨平台桌面程序。
 
 # Workflow:
 
@@ -166,6 +166,36 @@ Part2: 加密、解密测试
    
 
    ![encrypt](https://github.com/RaySunWHUT/MD5-Encryption/blob/master/assets/home.png)
+
+
+
+# Yarn Run:
+
+ **利用 yarn 安装 依赖 (depedency)**
+
+```bash
+yarn install
+```
+
+### 执行 serve，运行 (run) 项目
+
+```bash
+yarn run serve
+```
+
+### 项目运行成功后，可执行以下命令，利用electron-builder打包项目(读者可自行查询electron的其他命令[其他命令](https://nklayman.github.io/vue-cli-plugin-electron-builder/guide/#to-start-a-development-server))
+
+```bash
+yarn run electron:build 
+```
+
+### 打包成功后，在dist_electorn目录下，即可找到 .exe文件，点击.exe，即可安装electron打包后的软件。
+
+
+
+
+
+
 
 # References:
 1. https://www.cnblogs.com/anywell/p/10242635.html

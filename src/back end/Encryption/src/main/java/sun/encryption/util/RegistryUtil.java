@@ -4,6 +4,10 @@ import com.sun.jna.platform.win32.Advapi32Util;
 import com.sun.jna.platform.win32.WinReg;
 import sun.encryption.constants.Constants;
 
+/**
+ * 读写注册表
+ * author: Sun Rui
+ */
 public class RegistryUtil {
 
     /**
