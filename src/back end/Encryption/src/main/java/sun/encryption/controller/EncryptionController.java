@@ -86,7 +86,13 @@ public class EncryptionController {
         // 对文件内容加密
         String encryption = DLLUtil.textEncryption(content);
 
-        return JSONUtil.successJSON(encryption);
+        JSONObject encrypt_json = new JSONObject();
+
+        encrypt_json.put("content", content);
+
+        encrypt_json.put("encryption", encryption);
+
+        return JSONUtil.successJSON(encrypt_json);
 
     }
 

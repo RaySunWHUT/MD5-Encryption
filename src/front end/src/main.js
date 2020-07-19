@@ -18,9 +18,7 @@ Vue.use(ElementUI);
 
 Vue.use(Loading.directive);
 
-
 Vue.prototype.$loading = Loading.service;
-
 
 // 注释掉, 每次进入页面的会自动出现 message 提示
 // Vue.use(Message);

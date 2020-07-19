@@ -127,7 +127,7 @@ export default {
 
             _this.$message.success(info);
             
-						_this.$router.replace("/login");
+						_this.$router.replace("/userRegister");
 					
 					} else {
 

@@ -7,7 +7,7 @@
       active-class: 高亮显示当前页面对应的菜单      -->
     <!-- router.js对应的path项的components中若有name就渲染, 没有name则不渲染 -->
 
-    <router-view v-if="isRouterAlive"/>     <!-- 默认挂载router.js中default对应的路径 -->
+    <router-view></router-view>     <!-- 默认挂载router.js中default对应的路径 -->
 
     <!-- 路由视图, 挂载所有路由组件; 根据当前路由动态渲染不同的页面组件; 路由切换时, 切换的是<router-view>挂载的组件 -->
 
@@ -20,47 +20,7 @@
 
 export default {
 
-  name: 'app',
-  
-  components: {
-
-  },
-
-  provide () {
-  
-    return {
-
-      reload: this.reload
-    
-    }
-  
-  },
-
-  data() {
-
-    return {
-
-      isRouterAlive: true
-    
-    }
-
-  },
-
-  methods: {
-
-    reload () {
-      
-      this.isRouterAlive = false;
-      
-      this.$nextTick(function () {
-        
-        this.isRouterAlive = true;
-      
-      })
-    
-    }
-
-  }
+  name: 'app'
 
 }
 </script>

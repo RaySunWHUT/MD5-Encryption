@@ -20,7 +20,7 @@ function createWindow() {
     win = new BrowserWindow({
 
         width: 1400,
-        height: 600,
+        height: 800,
 
         // 隐藏导航栏
         // frame: false,
@@ -50,6 +50,7 @@ function createWindow() {
         }
 
     } else {
+
         createProtocol('app')
 
         // Load the index.html when not in development

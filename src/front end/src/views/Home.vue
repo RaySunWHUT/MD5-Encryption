@@ -74,17 +74,15 @@ export default {
     go() {
 
       this.$router.replace('/login');
+      this.$message.success("logout successful!");
 
     },
 
     uploadFile(fileObj) {
 
-      console.log(fileObj.file)
-
       let param = new FormData();
       
       param.append("file", fileObj.file);
-      console.log(param.get('file'));
 
       var _this = this;
       
@@ -104,23 +102,24 @@ export default {
 
       }).then(function (res) {
 
-        var code = res.code;
-        var info = res.info;
-        var msg = res.msg;
+        var code = res.data.code;
+        var info = res.data.info;
+        var msg = res.data.msg;
 
         if (code == 200) {
           
           _this.$message.success(msg);
 
-          _this.text_output = info;
+          _this.text_output = info.encryption;
           
-        } else {
+          _this.text_input = info.content;
 
+        } else {
+        
           _this.$message.warning(msg);
 
         }
         
-
       }).catch(function (err) {
         
           _this.$message.error(msg);
@@ -137,7 +136,7 @@ export default {
 
     encrypt() {
 
-          var _this = this;
+        var _this = this;
 
         http({
 
