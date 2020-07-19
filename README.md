@@ -67,17 +67,18 @@ This is the implement of course named "Computer System Skills Training" of WHUT.
 
 # View Design:
 
- 1. 软件注册: license.
- 2. 软件首页: index.
+ 1. 软件注册: register.
+ 2. 用户注册：userRegister.
  3. 登录: login.
- 4. 主要 **功能模块(functional module)**:
+ 4. 首页: home.
+ 
+ 主要 **功能模块(functional module)**:
       1. 加密(encrypt):
            1. 输入文本:
                 1. 文本框：手动输入。
                 2. 上传按钮：选择.txt / .doc / .docx文件(目前仅支持.txt，可fork后手动修改)。
 
-              2. 显示：
-
+           2. 显示：
                 显示加密前后文本内容。
 
 
