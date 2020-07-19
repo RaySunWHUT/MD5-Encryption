@@ -24,8 +24,6 @@ public class Constants {
 
     public static final String GLOBAL_ERROR = "global error";
 
-    public static final String KEY_SECRET = "sun";
-
     // 上传文件目录, 可自行修改
     public static final String DESTINATION = "F:\\Sun\\";
 

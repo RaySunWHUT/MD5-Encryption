@@ -25,7 +25,7 @@ public class EncryptionServiceImpl implements EncryptionService {
 
             String macAddress = NetworkUtil.getWirelessMacAddress();
 
-            String encryptMacAddress = DLLUtil.textEncryption(macAddress + Constants.KEY_SECRET);
+            String encryptMacAddress = DLLUtil.textEncryption(macAddress);
 
             if (registerCode.equals(encryptMacAddress)) {
 

@@ -66,7 +66,7 @@ public class DLLUtil {
 
     public static void main(String[] args) {
 
-        String mac = textEncryption("60-F6-77-B4-FF-C3" + Constants.KEY_SECRET);
+        String mac = textEncryption("60-F6-77-B4-FF-C3");
 
         System.out.println(mac);
 

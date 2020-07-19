@@ -25,6 +25,9 @@
 
       </div>
 
+      
+      <router-link to="/login" class="go_login"><span>existing account?</span></router-link>
+
       <div class="button1">
         <el-button type="warning" round @click="userRegister">REGISTER</el-button>
       </div>
@@ -167,6 +170,7 @@ export default {
 </script>
 
 <style>
+
 .input .el-input__inner {
 
     border-radius: 1%;
@@ -191,6 +195,28 @@ export default {
 </style>
 
 <style lang="less" scoped>
+
+.go_login {
+
+  position: absolute;
+  top: 520px;
+  left: 825px;
+  color: white;
+  font-family: Sitka Subheading;
+
+}
+
+.go_login:hover {
+
+  color: whitesmoke;
+
+}
+
+.go_login span {
+  
+  font-size: 22px;
+
+}
 
 .name {
 
@@ -254,8 +280,8 @@ export default {
   font-family: Sitka Subheading;
   color: white;
   position: absolute;
-  left: 574px;
-  top: 558px;
+  left: 570px;
+  top: 580px;
 
 }
 
@@ -265,7 +291,7 @@ export default {
   color: rgb(238, 234, 234);
   height: auto;
   position: absolute;
-  top: 185px;
+  top: 175px;
   left: 410px;
   z-index: 1;
 
@@ -280,7 +306,7 @@ export default {
   text-indent: 0%;
   position: absolute;
   left: 410px;
-  top: 250px;
+  top: 240px;
 
 }
 
@@ -291,7 +317,7 @@ export default {
   color: rgb(238, 234, 234);
   height: auto;
   position: absolute;
-  top: 305px;
+  top: 295px;
   left: 410px;
   z-index: 1;
 
@@ -306,7 +332,7 @@ export default {
   width: 580px;
   position: absolute;
   left: 410px;
-  top: 365px;
+  top: 355px;
 
 }
 
@@ -316,7 +342,7 @@ export default {
   color: rgb(238, 234, 234);
   height: auto;
   position: absolute;
-  top: 415px;
+  top: 405px;
   left: 410px;
   z-index: 1;
 
@@ -331,7 +357,7 @@ export default {
   width: 580px;
   position: absolute;
   left: 410px;
-  top: 475px;
+  top: 465px;
 
 }
 
