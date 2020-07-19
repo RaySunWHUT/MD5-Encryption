@@ -36,6 +36,10 @@ This is the implement of course named "Computer System Skills Training" of WHUT.
 
    1. 利用在线加解密系统 **测试** DLL 加密结果的**正确性**。
 
+**软件功能结构图**：
+
+​	![function](https://github.com/RaySunWHUT/MD5-Encryption/blob/master/assets/function_design.png)
+
 
 
 # Solution:
@@ -104,8 +108,8 @@ This is the implement of course named "Computer System Skills Training" of WHUT.
     
       3. Electron框架封装Vue项目，实现跨平台应用。
               	1. 整合HTML、css、JavScript。
-           	2. 编写project front end。
-           	3. 实现跨平台桌面程序。
+                  	2. 编写project front end。
+                  	3. 实现跨平台桌面程序。
 
 # Workflow:
 
