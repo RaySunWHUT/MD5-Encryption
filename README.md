@@ -73,15 +73,16 @@ This is the implement of course named "Computer System Skills Training" of WHUT.
  4. 首页: home.
 
  主要 **功能模块(functional module)**:
-      1. 加密(encrypt):
-           
-           输入文本:
-           
-           1. 文本框：手动输入。
-           2. 上传按钮：选择.txt / .doc / .docx文件(目前仅支持.txt，可fork后手动修改)。
-           
-   2. 显示:
-             显示加密前后文本内容。
+1. 加密(encrypt):
+
+   输入文本:
+
+   1. 文本框：手动输入。
+   2. 上传按钮：选择.txt / .doc / .docx文件(目前仅支持.txt，可在 **fork** 后手动修改)。
+
+   1. 显示:
+
+         显示加密前后文本内容。
 
 
 
@@ -93,18 +94,18 @@ This is the implement of course named "Computer System Skills Training" of WHUT.
 
       1. C语言封装动态链接库 .dll 和 .so。
     
-         ​	1. C语言实现MD5加密算法。
+         ​	C语言实现MD5加密算法。
     
       2. Java访问、读写注册表(registry)；连接动态链接库DLL。
           	1. 获取Mac网卡地址。
-              	2. 获取硬件硬件序列号。
-                   	3. 连接dll接口。
-                        	4. 编写project back end。
+         2. 获取硬件硬件序列号。
+         3. 连接dll接口。
+         4. 编写project back end。
     
       3. Electron框架封装Vue项目，实现跨平台应用。
-            	1. 整合HTML、css、JavScript。
-                	2. 编写project front end。
-                	3. 实现跨平台桌面程序。
+              	1. 整合HTML、css、JavScript。
+           	2. 编写project front end。
+           	3. 实现跨平台桌面程序。
 
 # Workflow:
 
